@@ -29,3 +29,6 @@ explore: tracks {
   }
 
 }
+
+explore: page_loads_by_month { description: "This explore shows the number of page loads by month for the past 6 months." fields: [page_loads_by_month.month, page_loads_by_month.page_loads]
+}
