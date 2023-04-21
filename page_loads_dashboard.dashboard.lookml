@@ -1,15 +1,3 @@
-#dashboard: page_loads_dashboard
-#title: Page Loads Dashboard
-#layout: newspaper
-#preferred_viewer: dashboards-next
-#tile_size: 100
-
-#filters:
-
-#elements:
-#  - name: hello_world
-#    type: looker_column
-
 - dashboard: hackathon_team_7
   title: Hackathon Team 7
   layout: newspaper
@@ -19,11 +7,14 @@
   - title: Hackathon Team 7
     name: Hackathon Team 7
     model: hackaton_team_7
+    type: table
+    filters: {}
+
+    #Addition of fields
     explore: page_loads_by_month
-    type: bar
     fields: [page_loads_by_month.month, page_loads_by_month.page_loads]
     fill_fields: [page_loads_by_month.month]
-    filters: {}
+
     sorts: [page_loads_by_month.month desc]
     limit: 500
     column_limit: 50
